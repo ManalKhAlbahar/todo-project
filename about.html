@@ -6,41 +6,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
+    <link rel="stylesheet" href="./style/about.css">
+    <style>
+ 
+        .name{
+ color: red; 
+ margin-left: 50px;;
+} 
+.formm{
+  text-align: center;
+margin-bottom: 30px;
+}
+
+
+.contactme{
+ color: brown; 
+ margin-left: 600px;
+}
+.myDiv {
+  
+            border: 5px solid black;
+          background-color: white;    
+          text-align: center;
+        }
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  
+}
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  word-spacing: 100px;
+}
+#Mname{
+  
+  height: 100px;
+  
+}
+
+ 
+
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+        </style>
 </head>
 
 <body>
     <header>
-        <h1>About us</h1>
-        <img alt="logo" src="assets/logo.png">
-        <nav>
-            <ul>
-                <li> <a href="./index.html">Home</a> </li>
-                <li> <a href="./about.html">About us</a> </li>
-            </ul>
-        </nav>
+        <nav class="navheader">
+          <div class="row">
+            <div class="column">
+              <img alt="logo" src="assets/logo.png" width="50" height="60">
+              </div>
+              <div class="column1">
+                <a href="./index.html" >Home</a> 
+                <a href="./about.html">About-us</a>
+            
+              </div>
+            </div>
+      
 
+
+                
+                
+            </nav>
+
+       
     </header>
     <main>
+       
         <section>
-            <img alt="logo" src="assets/logo.png">
-            <p>The main purpose of a to do list is to provide yourself with a list of
-                your priorities in order to ensure that you don't forget anything and are able to effectively plan out
-            </p>
-        </section>
-        <section>
-            <form action="">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <div class="row">
+            <div class="column">
+                <img alt="logo" src="assets/logo1.png" width="200" height="200">
+              </div>
+              <div class="column">
+              
+            <h2 class="name" >   My Name is Manal .</h2>
+            <div class="myDiv">
+                <p>I’m interested in Software development</p>
+                <p>I’m currently learning Javascript</p>
+              </div>
+              </div>
+            </div>
+      
+           
+              <h2 class="contactme">Contact Me</h2>
+       
 
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                <label for="fname">Emailadress</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                <label for="lname">message</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                <input type="submit">
-            </form>
+             
+            
+            <table style="width:10%" boorder="border: 1px solid black" class="tablee" align="center">
+              <form  action="">
+                        <tr>
+                            <td> <label for="fname">Full Name</label></td>
+                            <td><input type="text" id="fname" name="Full Name" placeholder="Full Name.."></td>
+                          </tr>
+                          <tr>
+                            <td> <label for="Ename">Email</label></td>
+                            <td><input type="text" id="Ename" name="Email" placeholder="Email.."></td>
+                          </tr>
+                          <tr>
+                            <td> <label for="Pname">Phone</label></td>
+                            <td> <input type="number" id="Pname" name="Phone" placeholder="Phone.."></td>
+                          </tr>
+                          <tr>
+                            <td> <label for="Mname">message</label></td>
+                            <td><input type="text" id="Mname" name="Mname" placeholder="message.."><br></td>
+                          </tr>
+            
+                           </form>
+                    </table>
+                    <form class="formm" action="">
+              
+                      <button type="button" onclick="alert('Welcome to my project')">send</button>
+                  </form>
+      
+            
         </section>
     </main>
     <footer>

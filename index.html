@@ -5,36 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo - Home</title>
+    <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
     <header>
-        <h1>ToDo</h1>
-        <img alt="logo" src="assets/logo.png">
-        <nav>
-            <ul>
-                <li> <a href="./index.html">Home</a> </li>
-                <li> <a href="./about.html">About us</a> </li>
-            </ul>
+        
+        <nav class="navheader">
+            <div class="row">
+                <div class="column">
+                  <img alt="logo" src="assets/logo.png" width="50" height="60">
+                  </div>
+                  <div class="column1">
+                    <a href="./index.html" >Home</a> 
+                    <a href="./about.html">About-us</a>
+                
+                  </div>
+                </div>
         </nav>
-
     </header>
     <main>
-        <table style="width:50%" border="border: 1px solid black" >
+        <h1>ToDo List</h1>
+        <table style="width:30%"x;  boorder="border: 5px solid black"  class="center">
             <tr>
-                <td>Tasks</td>
+                <td>List</td>
                 <td>Status</td>
               </tr>
               <tr>
-                <td>1</td>
-                <td></td>
+                <td>Learn JS</td>
+                <td><input type="text" id="Mname" name="Mname" placeholder="Status.."></td>
               </tr>
               <tr>
-                <td>2</td>
-                <td></td>
+                <td>Creat HTML page</td>
+                <td><input type="text" id="Mname" name="Mname" placeholder="Status.."></td>
               </tr>
               <tr>
-                <td>3</td>
-                <td></td>
+                <td>Reading book</td>
+                <td><input type="text" id="Mname" name="Mname" placeholder="Status.."></td>
+              </tr>
+              <tr>
+                <td>Watch the match</td>
+                <td><input type="text" id="Mname" name="Mname" placeholder="Status.."></td>
               </tr>
         </table>
     </main>
