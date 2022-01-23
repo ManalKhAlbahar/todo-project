@@ -4,16 +4,6 @@ console.log("Your name is " + name);
 var gender = prompt("Please enter your gender","male or female");
 console.log("Your gender is " + gender);
 
-/*if (gender == 'male')
-{
-    alert("Welcome, MR. " + name);
-
-}
-else  (gender == 'female')
-{
-    alert("Welcome, MS. " + name);
-    */
-    
     var age = prompt("Enter your age: ");
     console.log("Your age is " + age);
 
@@ -25,14 +15,16 @@ else  (gender == 'female')
 
     }
 
-    var Welcome = confirm("Welcoming Message");
-    console.log(Welcome);
+   var welcome= confirm("Press yess to enter welcoming message ")
 
-    if (gender == "male" ) {
-        alert("Hello Mr " +name)
-      } else if (gender == "female") {
-        alert("Hello Ms " +name)
-      } else {
-        console.log(Welcome)
+    if (gender.toLocaleLowerCase() == "male" && welcome == true ) {
+        alert("Welcome Mr " +name)
+      } else if (gender.toLocaleLowerCase() == "female"  && welcome == true ) {
+        alert("Welcome Ms " +name)
+      } else if ( welcome == true) { 
+       alert("Welcome")
+      }
+       else {
+
       }
       
