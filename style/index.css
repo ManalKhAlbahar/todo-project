@@ -43,19 +43,42 @@ a:link {
 }
 
 
+
+
 /* Clearfix (clear floats) */
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
+
+
 table, th, td {
   border: 1px solid black;
-  border-collapse: collapse;
+  border-collapse: collapse; 
+  margin-bottom: 25px;
+  text-align: center;
+  padding:  20px ;
+ } 
+
+
+ .greencontainer {
+  width: 150px;
+  height: 10px;
+  background-color: green;
+  padding: 15px;
+  margin: 5px;
+  margin-left: 15px;
 }
 
-table.center {
-  margin-left: auto; 
-  margin-right: auto;
-  margin-bottom: 20px;
+.redcontainer {
+  width: 150px;
+  height: 10px;
+  background-color: red;
+  padding: 15px;
+  margin: 5px;
+  margin-left: 15px;
 }
+
+
+ 

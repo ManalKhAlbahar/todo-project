@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo - Home</title>
     <link rel="stylesheet" href="./style/index.css">
+
+
 </head>
 <body>
     <header>
-        
+     
         <nav class="navheader">
             <div class="row">
                 <div class="column">
@@ -25,33 +27,35 @@
     </header>
     <main>
         <h1>ToDo List</h1>
-        <table style="width:30%"x;  boorder="border: 5px solid black"  class="center">
+        <table style="width:30%"x;  boorder="border: 5px solid black"  class="center" align="center">
             <tr>
                 <td>List</td>
                 <td>Status</td>
               </tr>
               <tr>
-                <td>Learn JS</td>
-                <td><input type="text" id="Mname" name="Mname" placeholder="Status.."></td>
+                <td>Learn JS <input type="checkbox" > </td>
+                <td class="green" ><div class="greencontainer"></div></td>
               </tr>
               <tr>
-                <td>Creat HTML page</td>
-                <td><input type="text" id="Mname" name="Mname" placeholder="Status.."></td>
+                <td>Creat HTML page <input type="checkbox"  > </td>
+                <td class="red" > <div class="redcontainer"></div></td>
               </tr>
               <tr>
-                <td>Reading book</td>
-                <td><input type="text" id="Mname" name="Mname" placeholder="Status.."></td>
+                <td>Walk the dog <input type="checkbox" ></td>
+                <td class="red" > <div class="redcontainer"></div></td>
               </tr>
               <tr>
-                <td>Watch the match</td>
-                <td><input type="text" id="Mname" name="Mname" placeholder="Status.."></td>
+                <td>Watch the match <input type="checkbox"  ></td>
+                <td class="red" ><div class="redcontainer"></div></td>
               </tr>
         </table>
+        <script src="./js/app.js"></script>
     </main>
     <footer>
         <p>
             &copy; copyright 2022
         </p>
     </footer>
+   
 </body>
 </html>
