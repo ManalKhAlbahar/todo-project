@@ -27,4 +27,51 @@ console.log("Your gender is " + gender);
        else {
 
       }
+
+      var questionNumberOne = prompt("Are you happy today??","Yes / no");
+  
+
+      if (questionNumberOne.toLocaleLowerCase() == "yes" ) {
+        console.log(true);
+
+      } else if (questionNumberOne.toLocaleLowerCase() =="no") {
+        console.log(false);
+
+      }
+       else {
+        console.log("invalid");
+      }
+
       
+      var questionNumberTwo = prompt("Do you like Javascript ??","Yes / no");
+      if (questionNumberTwo.toLocaleLowerCase() == "yes" ) {
+        console.log(true);
+
+      } else if (questionNumberTwo.toLocaleLowerCase() =="no") {
+        console.log(false);
+
+      }
+       else {
+        console.log("invalid");
+      }
+      
+      var questionNumberThree = prompt("Do you work ??","Yes / no");
+      
+      if (questionNumberThree.toLocaleLowerCase() == "yes" ) {
+        console.log(true);
+
+      } else if (questionNumberThree.toLocaleLowerCase() =="no") {
+        console.log(false);
+
+      }
+       else   {
+        console.log("invalid") ;
+      }
+
+    
+      const myArray = [questionNumberOne, questionNumberTwo , questionNumberThree];
+      console.log(myArray)
+
+      for (var i = 0; i < myArray.length; i++) {
+        console.log(myArray[i]);
+      }
