@@ -28,45 +28,27 @@ console.log("Your gender is " + gender);
 
       }
 
-      var questionNumberOne = prompt("Are you happy today??","Yes / no");
-  
-
-      if (questionNumberOne.toLocaleLowerCase() == "yes" ) {
-        console.log(true);
-
-      } else if (questionNumberOne.toLocaleLowerCase() =="no") {
-        console.log(false);
-
-      }
-       else {
-        console.log("invalid");
-      }
-
       
-      var questionNumberTwo = prompt("Do you like Javascript ??","Yes / no");
-      if (questionNumberTwo.toLocaleLowerCase() == "yes" ) {
-        console.log(true);
+    
 
-      } else if (questionNumberTwo.toLocaleLowerCase() =="no") {
-        console.log(false);
+      function askQuestion (question){
+          let answer = prompt(question);
+          if (answer.toLocaleLowerCase()=="yes" || answer.toLocaleLowerCase()== "no" ) {
+              return answer;
+              
+          }
+          else  {
+            return "invalid";
+          }
 
       }
-       else {
-        console.log("invalid");
-      }
+
+
+
+      var questionNumberOne =askQuestion("Are you happy today??","Yes / no");
+      var questionNumberTwo = askQuestion("Do you like Javascript ??","Yes / no");
+     var questionNumberThree = askQuestion("Do you work ??","Yes / no");
       
-      var questionNumberThree = prompt("Do you work ??","Yes / no");
-      
-      if (questionNumberThree.toLocaleLowerCase() == "yes" ) {
-        console.log(true);
-
-      } else if (questionNumberThree.toLocaleLowerCase() =="no") {
-        console.log(false);
-
-      }
-       else   {
-        console.log("invalid") ;
-      }
 
     
       const myArray = [questionNumberOne, questionNumberTwo , questionNumberThree];
